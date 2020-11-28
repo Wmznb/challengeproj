@@ -1,0 +1,9 @@
+<view class="grid col-2 padding-sm">
+  <view class="padding-sm" wx:for="{{ColorList}}" wx:key>
+    <view class="bg-{{item.name}} padding radius text-center shadow-blur" style="height:500rpx" data-index="{{index}}" bindtap="click">
+      <view class="text-xxl">{{item.title}}</view>
+      <view class="text-xxl">挑战库</view>
+     <van-icon name="{{item.icon}}" size="50px" />
+    </view> 
+  </view>
+</view>

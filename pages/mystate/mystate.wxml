@@ -1,0 +1,27 @@
+<scroll-view scroll-x class="bg-white nav">
+  <view class="flex text-center">
+    <view class="cu-item flex-sub {{index==TabCur?'text-orange cur':''}}" wx:for="{{tablist}}" wx:key bindtap="tabSelect" data-id="{{index}}">
+      <view >{{item}}</view>
+    </view>
+  </view>
+</scroll-view>
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 列表
+    </view>
+  </view>
+  <view class="cu-list menu ">
+   
+    <view class="cu-item " bindtap="toShow">
+      <view class="content">
+        <text class="text-grey">跑1600米</text>
+        <button class="cu-btn bg-green shadow" style="margin-left:420rpx" bindtap="change" wx:if="{{show}}">完成</button>
+      </view>
+    </view>
+    <view class="cu-item " bindtap="toShow">
+      <view class="content">
+        <text class="text-grey">一口气吹灭十根蜡烛</text>
+        <button class="cu-btn bg-green shadow" style="margin-left:275rpx" bindtap="change" wx:if="{{show}}">完成</button>
+      </view>
+    </view>
+</view>

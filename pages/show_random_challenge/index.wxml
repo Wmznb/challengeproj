@@ -1,0 +1,23 @@
+<view class="padding-sm" >
+<view class="bg-{{ColorList[3].name}} padding radius text-center shadow-blur" style="height:1000rpx;"  >
+
+     <view class="text-xxl" style="margin-top:200rpx">今日挑战</view>
+      <view class="text-xxl" style="margin-top:200rpx">{{list[cur].content}}</view>
+      <view class="grid col-2 padding-sm" style="margin-top:200rpx">
+  <view class="margin-tb-sm text-center" >
+    <button class="cu-btn round bg-yellow " value="m">已完成人数{{list[cur].done_count}} </button>
+  </view>
+  <view class="margin-tb-sm text-center" >
+    <button class="cu-btn round bg-yellow"  value="m">正在完成人数{{list[cur].doing}}</button>
+  </view>
+</view> 
+</view> 
+<view class="grid col-2 padding-sm">
+  <view class="margin-tb-sm text-center" >
+    <button class="cu-btn round bg-yellow " value="m" bindtap="acc">接受挑战</button>
+  </view>
+  <view class="margin-tb-sm text-center" >
+    <button class="cu-btn round bg-red"  value="m" bindtap="change">换一个</button>
+  </view>
+</view>
+</view>

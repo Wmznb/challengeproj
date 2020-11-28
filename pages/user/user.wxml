@@ -1,0 +1,39 @@
+<view class="UCenter-bg">
+    <image src="{{userInfo.avatarUrl}}" class="png" mode="widthFix"></image>
+    <view class="text-xl">{{userInfo.nickName}}
+    </view>
+    <image src="https://raw.githubusercontent.com/weilanwl/ColorUI/master/demo/images/wave.gif" mode="scaleToFill" class="gif-wave"></image>
+  </view>
+  <view class="cu-list menu card-menu margin-top-xl margin-bottom-xl shadow-lg radius">
+     <view class="cu-item arrow">
+       <navigator class="content" url="/pages/mystate/mystate" hover-class="none">
+        <text class="cuIcon-writefill text-cyan"></text>
+        <text class="text-grey">我的挑战库</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+       <navigator class="content" url="/pages/mypublish/mypublish" hover-class="none">
+        <text class="cuIcon-usefull text-red"></text>
+        <text class="text-grey">我的挑战完成情况</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+       <navigator class="content" url="/pages/mypublish/mypublish" hover-class="none">
+        <text class="cuIcon-rankfill text-yellow"></text>
+        <text class="text-grey">挑战排行榜</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/about/about" hover-class="none">
+        <text class="cuIcon-formfill text-green"></text>
+        <text class="text-grey">关于这个小程序</text>
+      </navigator>
+    </view>
+    <view class="cu-item arrow">
+      <navigator class="content" url="/pages/suggestion/suggestion" hover-class="none">
+        <text class="cuIcon-creativefill text-orange"></text>
+        <text class="text-grey">意见反馈</text>
+      </navigator>
+    </view>
+  </view>
+  <view class="cu-tabbar-height"></view>

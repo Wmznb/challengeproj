@@ -1,0 +1,18 @@
+<view class="cu-bar bg-white solid-bottom margin-top">
+    <view class="action">
+      <text class="cuIcon-title text-orange "></text> 列表
+    </view>
+  </view>
+  <view class="cu-list menu ">
+   
+    <view class="cu-item " bindtap="toShow">
+      <view class="content">
+        <text class="text-grey">谁敢试试，完成了请吃饭</text>
+      </view>
+    </view>
+    <view class="cu-item "  bindtap="toShow">
+      <view class="content">
+        <text class="text-grey">哈哈哈</text>
+      </view>
+    </view>
+</view>

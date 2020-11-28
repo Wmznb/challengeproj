@@ -1,0 +1,12 @@
+<form bindsubmit="submit">
+	<view class="cu-form-group margin-top">
+		<view class="title">主题</view>
+		<input  name="goodsName" placeholder="请输入主题" value="{{goodsName}}"></input>
+	</view>
+  <view class="cu-form-group margin-top" wx:for="{{list}}">
+		<view class="title" >挑战项目</view>
+		<input name="price" placeholder="请输入挑战项目"></input>
+  </view>
+  <van-button type="primary"size="large" bindtap="addlist" >增加挑战项目</van-button>
+	<van-button type="primary"size="large" form-type="submit" style="margin-top:20rpx" class="k"> 提交</van-button>
+  </form>
